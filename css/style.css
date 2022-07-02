@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+body{
+    font-size: 100%;
+    background-color: #333;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:95vh;
+}
+#particles{
+    color:#ccc;
+    font-family: 'Playball',cursive;
+    font-size:5rem;
+    font-weight:normal;
+    margin:2rem 0 0 0;
+    position:relative;
+    text-align: center;
+}
+.particle{
+    background-color: #00b3ff;
+    border-radius:50%;
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.25) inset;
+    height: 1rem;
+    left:50%;
+    position: absolute;
+    /*you can remove this blur if you want*/
+    filter: blur(12px);
+    top:50%;
+    width:1rem;
+}
+.particle--a{
+    animation:1.5s linear 0s normal none infinite particle-a;
+}
+.particle--b{
+    animation:1.7s linear 0s normal none infinite particle-b;
+    background-color: #e91e63;
+}
+@keyframes particle-a{
+    0%{
+        animation-timing-function: ease-in-out;
+        transform:translate3d(-5rem,-3rem,0px);
+        z-index:1;
+    }
+    25%{
+       height:5rem;
+       width:5rem;
+    }
+    50%{
+       animation-timing-function: ease-in-out;
+       opacity:1;
+       transform:translate3d(5rem,3rem,0px);
+       z-index:1;
+    }
+    55%{
+       z-index:-1;
+    }
+    75%{
+      height:2.5rem;
+      opacity:0.5;
+      width:2.5rem;
+    }
+    100%{
+     transform:translate3d(-5rem,-3rem,0px);
+     z-index:-1;
+    }
+}
+@keyframes particle-b{
+    0%{
+        animation-timing-function: ease-in-out;
+        transform:translate3d(-5rem,-3rem,0px);
+        z-index:1;
+    }
+    25%{
+       height:5rem;
+       width:5rem;
+    }
+    50%{
+       animation-timing-function: ease-in-out;
+       opacity:1;
+       transform:translate3d(5rem,3rem,0px);
+       z-index:1;
+    }
+    55%{
+       z-index:-1;
+    }
+    75%{
+      height:2.5rem;
+      opacity:0.5;
+      width:2.5rem;
+    }
+    100%{
+     transform:translate3d(-5rem,-3rem,0px);
+     z-index:-1;
+    }
+}
